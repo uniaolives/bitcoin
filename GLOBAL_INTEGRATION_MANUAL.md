@@ -18,6 +18,8 @@ O ecossistema é composto pelos seguintes componentes principais:
     *   **Função:** Blockchain Proof-of-Stake que gerencia o minting/burning de `nBTC` e a compatibilidade IBC.
 *   **Repo C: Relayers (Off-chain)**
     *   **Função:** Processos que monitoram a rede Bitcoin para depósitos e a Nomic Chain para saques, realizando a comunicação entre as redes.
+*   **Componente D: Game Server (Distributed Mesh)**
+    *   **Função:** Servidor de jogo descentralizado administrado por AGI, utilizando Mesh e Starlink para baixa latência e Bitcoin para ancoragem de estado e economia.
 
 ---
 
@@ -37,6 +39,7 @@ O ecossistema é composto pelos seguintes componentes principais:
 | **Modelos de Dados (nBTC)** | `nomic-chain-repo` | Relayers, Bitcoin App |
 | **Contratos de Interface** | `shared-logic / sample_module.go` | Todos |
 | **Configuração de Rede** | `relayer-repo` | Bitcoin & Nomic Nodes |
+| **Consenso de Jogo** | `game-server / nomic_game_server.md` | Shard Nodes, AGI Referee |
 
 ---
 
