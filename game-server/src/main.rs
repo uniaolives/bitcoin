@@ -33,6 +33,13 @@ impl LocalMeshGame {
     }
 }
 
+#[no_mangle]
+pub extern "C" fn _start() -> ! {
+    // In a bare-metal environment, this would be the entry point
+    let _phi = measure_constitutional_phi();
+    loop {}
+}
+
 #[panic_handler]
 fn panic(_info: &core::panic::PanicInfo) -> ! {
     loop {}
