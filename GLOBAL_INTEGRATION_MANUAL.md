@@ -10,6 +10,8 @@ O projeto **Nomic** é uma ponte descentralizada que permite a custódia e trans
 ---
 
 ### 2. Camada de Repositórios
+O ecossistema é orientado pela **Meta-Ontologia da Programação** (veja `doc/META_ONTOLOGY.md`), que unifica as perspectivas epistemológicas entre as diferentes linguagens e paradigmas utilizados.
+
 O ecossistema é composto pelos seguintes componentes principais:
 
 *   **Repo A: Bitcoin Core (C++)** (Este repositório)
@@ -45,6 +47,7 @@ O ecossistema é composto pelos seguintes componentes principais:
 
 ### 5. Regras de Ouro e Guardrails
 
+*   **Fundamento Ontológico (Computational Platonism):** Toda implementação deve ser rastreável a uma especificação formal. O uso de `#![no_std]` e aritmética de ponto fixo no Game Server é uma manifestação desta busca pela pureza estrutural e determinismo.
 *   **Consistência de Contrato (API Contract Consistency):** Qualquer mudança no formato de transação multi-sig no Repo A deve ser validada contra os parsers no Repo B e Repo C.
 *   **Validação de Versões:** Versões de bibliotecas compartilhadas (como middlewares IBC) devem ser mantidas em sincronia.
 *   **Mapeamento de Pontos de Falha:** Identificar onde a latência da rede Bitcoin pode afetar o tempo de minting no Cosmos.
