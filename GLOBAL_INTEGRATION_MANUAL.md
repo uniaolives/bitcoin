@@ -16,6 +16,7 @@ O ecossistema é composto pelos seguintes componentes principais:
 
 *   **Repo A: Bitcoin Core (C++)** (Este repositório)
     *   **Função:** Fork do Bitcoin Core que gerencia a infraestrutura de rede Bitcoin e a custódia das chaves multi-sig dos validadores.
+    *   **Protocolos:** Veja [doc/AVALON_CODE.md](doc/AVALON_CODE.md) para fórmulas e protocolos fundamentais.
 *   **Repo B: Nomic Chain (Go/Cosmos SDK)**
     *   **Função:** Blockchain Proof-of-Stake que gerencia o minting/burning de `nBTC` e a compatibilidade IBC.
 *   **Repo C: Relayers (Off-chain)**
